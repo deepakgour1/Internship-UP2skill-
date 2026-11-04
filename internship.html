@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Gour | Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 {
+            color: #2563eb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .home {
+            text-align: center;
+            padding: 90px 20px;
+            background-color: #eaf1ff;
+        }
+
+        .home h1 {
+            font-size: 38px;
+            color: #1e40af;
+        }
+
+        .home p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #2563eb;
+            margin-bottom: 25px;
+        }
+
+        .content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills-list span {
+            background-color: white;
+            border: 1px solid #2563eb;
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+
+        /* Student Details Form */
+        .form-container {
+            max-width: 650px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .gender-options {
+            display: flex;
+            gap: 20px;
+        }
+
+        .gender-options label {
+            font-weight: normal;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .home h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 35px 6%;
+            }
+
+            .form-container {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Deepak Gour</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#form">Student Form</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <h1>Hello, I'm Deepak Gour</h1>
+        <p>B.Tech Computer Science Student</p>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#about" class="btn">Know More</a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <p>
+                I am a B.Tech Computer Science student at NIET,
+                Greater Noida. I am interested in learning programming
+                and web development. I enjoy learning new technologies
+                and improving my technical knowledge.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="content">
+            <h3>B.Tech - Computer Science and Engineering</h3>
+            <p>NIET, Greater Noida</p>
+            <br>
+            <h3>Class 12th</h3>
+            <p>Uttar Pradesh Board</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>C Programming</span>
+            <span>Basic JavaScript</span>
+        </div>
+    </section>
+
+    <!-- Student Details Form -->
+    <section id="form">
+        <h2>Student Details Form</h2>
+
+        <div class="form-container">
+            <form id="studentForm">
+
+                <div class="form-group">
+                    <label for="name">Student Name</label>
+                    <input type="text" id="name"
+                    placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="father">Father's Name</label>
+                    <input type="text" id="father"
+                    placeholder="Enter father's name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                    placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone"
+                    placeholder="Enter mobile number"
+                    pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" required>
+                        <option value="">Select Course</option>
+                        <option>B.Tech CSE</option>
+                        <option>B.Tech AI/ML</option>
+                        <option>B.Tech IT</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="college">College Name</label>
+                    <input type="text" id="college"
+                    placeholder="Enter college name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year of Study</label>
+                    <select id="year" required>
+                        <option value="">Select Year</option>
+                        <option>First Year</option>
+                        <option>Second Year</option>
+                        <option>Third Year</option>
+                        <option>Fourth Year</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label>
+                            <input type="radio" name="gender"
+                            value="Male" required> Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender"
+                            value="Female"> Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender"
+                            value="Other"> Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="3"
+                    placeholder="Enter your address" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Submit Details
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="content">
+            <p><strong>Name:</strong> Deepak Gour</p>
+            <p><strong>College:</strong> NIET, Greater Noida</p>
+            <p><strong>Email:</strong> Add your email address here</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Deepak Gour. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("studentForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Student details submitted successfully!");
+
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>
